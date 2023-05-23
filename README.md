@@ -58,3 +58,11 @@ Also, consider updating `author` and `license` fields in your `package.json` fil
 At this step everything is up to you. You could add/remove other dependencies, rename directory and develop your project the way you like.
 
 Enjoy! `:)`
+
+## Scripts
+
+By default the following scripts are setup:
+
+- `npm start` to start a dev server (all changes are tracked and recompiled on the go)
+- `npm run build` to run a production build (compiled with minimization)
+- `npm run build-dev` to run a one-time dev. build (faster compilation, no minimalization)
