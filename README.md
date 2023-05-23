@@ -24,10 +24,22 @@ git commit -m"initial commit"
 
 # copy template
 git clone https://github.com/rawjrk/react-template.git
+
+# remove unnecessary files
 rm -rf react-template/.git
-rm react-template/README.md react-template/LICENSE
+rm react-template/README.md
+rm react-template/LICENSE
+rm react-template/package-lock.json
+
+# copy .gitignore
+cp react-template/.gitignore .
+
+# move files from subfolder and delete it
 mv -v react-template/* .
 rm -r react-template
+
+# install dependencies
+npm install
 
 # commit changes
 git add .
