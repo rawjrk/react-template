@@ -51,7 +51,9 @@ xxxxxxx (HEAD -> main) initial commit
 
 ### Further actions
 
-Don't fortget to run `$ npm install`
+Don't fortget to run `$ npm install`.
+
+Also, consider updating `author` and `license` fields in your `package.json` file.
 
 At this step everything is up to you. You could add/remove other dependencies, rename directory and develop your project the way you like.
 
