@@ -37,13 +37,6 @@ cp react-template/.gitignore .
 # move files from subfolder and delete it
 mv -v react-template/* .
 rm -r react-template
-
-# install dependencies
-npm install
-
-# commit changes
-git add .
-git commit -m"project setup"
 ```
 
 **Then run it:** `$ ./new-repo.sh`
@@ -53,6 +46,13 @@ git commit -m"project setup"
 ```
 $ cd new-repo
 $ git log --oneline
-xxxxxxx (HEAD -> main) project setup
-xxxxxxx initial commit
+xxxxxxx (HEAD -> main) initial commit
 ```
+
+### Further actions
+
+Don't fortget to run `$ npm install`
+
+At this step everything is up to you. You could add/remove other dependencies, rename directory and develop your project the way you like.
+
+Enjoy! `:)`
