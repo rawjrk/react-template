@@ -31,11 +31,9 @@ rm react-template/README.md
 rm react-template/LICENSE
 rm react-template/package-lock.json
 
-# copy .gitignore
-cp react-template/.gitignore .
-
 # move files from subfolder and delete it
 mv -v react-template/* .
+mv -v react-template/.[^.]* .
 rm -r react-template
 ```
 
