@@ -24,17 +24,18 @@ git commit -m"initial commit"
 
 # copy template
 git clone https://github.com/rawjrk/react-template.git
+cd react-template
 
 # remove unnecessary files
-rm -rf react-template/.git
-rm react-template/README.md
-rm react-template/LICENSE
-rm react-template/package-lock.json
+rm -rf .git
+rm README.md LICENSE package-lock.json
 
-# move files from subfolder and delete it
-mv -v react-template/* .
-mv -v react-template/.[^.]* .
-rm -r react-template
+# move files from subfolder
+mv -v ./* ..
+mv -v ./.[^.]* ..
+
+# then remove it
+rm -r ../react-template
 ```
 
 **Then run it:** `$ ./new-repo.sh`
