@@ -1,21 +1,21 @@
 {
   "private": true,
   "scripts": {
-    "test": "jest",
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack",
-    "build-dev": "webpack"
+    "build-dev": "webpack",
+    "test": "jest"
   },
   "keywords": [
     "react"
   ],
+  "author": "RawJrk",
+  "license": "MIT",
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "author": "RawJrk",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.22.4",
