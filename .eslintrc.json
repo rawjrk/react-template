@@ -11,10 +11,13 @@
   ],
   "overrides": [
     {
-      "files": ["**.test.js"],
+      "files": ["**.test.js", "setupTests.js"],
       "env": { "jest/globals": true },
       "extends": ["plugin:jest/recommended"],
-      "plugins": ["jest"]
+      "plugins": ["jest"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
     }
   ],
   "parserOptions": {
