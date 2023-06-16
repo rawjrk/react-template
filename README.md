@@ -65,5 +65,6 @@ By default the following scripts are setup:
 - `npm start` to start a dev server (all changes are tracked and recompiled on the go)
 - `npm run build` to run a production build (compiled with minimization)
 - `npm run build-dev` to run a one-time dev. build (faster compilation, no minimalization)
-- `npm test` to run tests with Jest
-- `npm test-nc` to run tests with Jest (w/out generating coverage reports)
+- `npm test` to run tests with Jest (one time)
+- `npm run test-w` to run tests in watch mode
+- `npm run coverage` to run tests coverage reports
