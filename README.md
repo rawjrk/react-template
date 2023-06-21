@@ -42,7 +42,7 @@ rm -r ../react-template
 
 ### Check result
 
-```
+```bash
 $ cd new-repo
 $ git log --oneline
 xxxxxxx (HEAD -> main) initial commit
@@ -64,8 +64,8 @@ By default the following scripts are setup:
 
 - `npm start` to start a dev server (all changes are tracked and recompiled on the go)
 - `npm run build` to run a production build (compiled with minimization)
-- `npm run build-dev` to run a one-time dev. build (faster compilation, no minimalization)
+- `npm run build:dev` to run a one-time dev. build (faster compilation, no minimalization)
 - `npm run lint` to run linting with ESLint and Prettier
 - `npm test` to run tests with Jest (one time)
-- `npm run test-w` to run tests in watch mode
-- `npm run coverage` to run tests coverage reports
+- `npm run test:watch` to run tests in watch mode
+- `npm run test:cov` to run tests and get coverage report
