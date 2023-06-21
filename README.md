@@ -58,6 +58,16 @@ At this step everything is up to you. You could add/remove other dependencies, r
 
 Enjoy! `:)`
 
+## Alternatively
+
+You could also use `degit` to clone the repo without history.
+
+```
+degit github:rawjrk/react-template
+```
+
+For more info, please visit the official [documentation](https://github.com/Rich-Harris/degit).
+
 ## Scripts
 
 By default the following scripts are setup:
