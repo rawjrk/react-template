@@ -38,7 +38,7 @@ mv -v ./.[^.]* ..
 rm -r ../react-template
 ```
 
-**Then run it:** `$ ./new-repo.sh`
+Then run it as `./new-repo.sh`
 
 ### Check result
 
@@ -50,7 +50,7 @@ xxxxxxx (HEAD -> main) initial commit
 
 ### Further actions
 
-Don't fortget to run `$ npm install`.
+Don't fortget to run `npm install`.
 
 Also, consider updating `author` and `license` fields in your `package.json` file.
 
