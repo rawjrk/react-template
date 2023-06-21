@@ -3,12 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 let mode = "development";
-const plugins = [
-  new CleanWebpackPlugin(),
-  new HtmlWebpackPlugin({
-    template: "./src/index.html",
-  }),
-];
 
 if (process.env.NODE_ENV === "production") {
   mode = "production";
@@ -16,7 +10,12 @@ if (process.env.NODE_ENV === "production") {
 
 module.exports = {
   mode,
-  plugins,
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+  ],
 
   output: {
     path: path.resolve(__dirname, "./dist"),
