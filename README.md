@@ -9,10 +9,21 @@ I just simply add a small bash-script to the main projects directory:
 ```bash
 #!/bin/bash
 
+# get project name from cli argument
+project_name=$1
+
+# if not entered, ask for project name
+if [ ! $project_name ]
+then
+  read -p 'enter project name: ' project_name
+fi
+
 # create new-repo
-mkdir new-repo
-cd new-repo
-echo "" > README.md
+mkdir $project_name
+cd $project_name
+
+# create README file
+echo \# $project_name > README.md
 
 # copy license from existing file
 cp ../MIT-LICENSE.txt ./LICENSE
@@ -38,11 +49,20 @@ mv -v ./.[^.]* ..
 rm -r ../react-template
 ```
 
-Then run it as `./new-repo.sh`
+Then run it as `./new-repo.sh <project_name>`.
+
+Where `<project_name>` is the name of repo you're creating.
+
+If not specified, script will ask for it anyway:
+
+```
+$ ./new-repo.sh
+enter project name:
+```
 
 ### Check result
 
-```bash
+```
 $ cd new-repo
 $ git log --oneline
 xxxxxxx (HEAD -> main) initial commit
